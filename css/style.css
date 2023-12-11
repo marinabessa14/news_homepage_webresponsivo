@@ -64,6 +64,24 @@ nav {
    color: hsl(5, 82%, 48%);
 }
 
+nav .menu {
+  display: inline-block;
+  height: 1.7rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+nav .close {
+  display: inline-block;
+  height: 3.1rem;
+  position: absolute;
+  top: 2.8rem;
+  right: 1.6rem;
+  z-index: 99;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
 /* MAIN */
 
 .main-container {
@@ -235,7 +253,11 @@ nav{
     display: none;
 }
 .menu{
-    display: flex;
+    display: none;
+}
+
+nav .close {
+    display: none;
 }
 .main-container{
     padding-inline: 1rem;
